@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "phenominal_experience",
+  "version": "${version}",
+  "name": "Phenominal_Experience",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/phenominal_experience/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.sigroot.phenomenal_experience.client.Phenominal_experienceDataGenerator"
+    ],
+    "client": [
+      "org.sigroot.phenomenal_experience.client.Phenominal_experienceClient"
+    ],
+    "main": [
+      "org.sigroot.phenomenal_experience.Phenomenal_experience"
+    ]
+  },
+  "mixins": [
+    "phenominal_experience.mixins.json",
+    {
+      "config": "phenominal_experience.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
