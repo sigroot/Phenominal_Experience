@@ -6,7 +6,6 @@
   "description": "",
   "authors": [],
   "contact": {},
-  "license": "unlicense",
   "icon": "assets/phenominal_experience/icon.png",
   "environment": "*",
   "entrypoints": {
